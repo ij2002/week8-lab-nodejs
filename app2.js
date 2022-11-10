@@ -1,7 +1,7 @@
 //load hhtp module
 const http = require('http');
 const  fs = require('fs'); 
-const  myModule = require('./videos');
+// const  myModule = require('./videos');
 
 //create a HTTP server
 // a server is an object that extends EventEmitter!
@@ -10,7 +10,7 @@ const  myModule = require('./videos');
 const server = http.createServer((request, response) => {
     //check if the route is /
     if (request.url === '/') {
-        response.write("Hello from node.js on Hadj's computer");
+        response.write("Hello from node.js on ishana's computer");
         response.end();
     }
 
